@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+$font-stack: 'Roboto', sans-serif;
+$color: white;
+$color-title: red;
+
+$color-machin: #f9f9f9;
+body {
+	margin: 0;
+}
+
+header {
+	width: 100vw;
+	height: 80vh;
+	background-image: url("background.png");
+
+	.quelquechose {
+		display: flex;
+		justify-content: space-between;
+
+		ul {
+			display: flex;
+			justify-content: space-between;
+			width: 35%;
+
+			li {
+				display: flex;
+				font: 20px $font-stack;
+				color: $color;
+				list-style: none;
+
+				&.home {
+					border: 1px solid white;
+				}
+			}
+		}
+
+		.logo img {
+			width: 200px;
+			top: 2%;
+			position: absolute;
+			left: 3%;
+		}
+	}
+
+	h1 {
+		display: flex;
+		position: absolute;
+		left: 30%;
+		top: 16%;
+		font-size: 60px;
+		color: $color-title;
+		font: 60px $font-stack;
+	}
+
+	p {
+		position: absolute;
+		top: 28%;
+		width: 40%;
+		left: 31%;
+		font: 28px $font-stack;
+	}
+
+	.right i {
+		position: absolute;
+		font-size: 50px;
+		left: 97%;
+		color: silver;
+		top: 50%;
+	}
+
+	.left i {
+		position: absolute;
+		top: 50%;
+		font-size: 50px;
+		color: silver;
+		left: 1%;
+	}
+
+	.point_fixer {
+		display: flex;
+		justify-content: space-between;
+		width: 2.5%;
+		position: relative;
+		top: 84%;
+		left: 50%;
+
+		.rond1 {
+			width: 10px;
+			height: 10px;
+			border-radius: 50px;
+			border: 1px solid white;
+		}
+
+		.rond2 {
+			width: 10px;
+			height: 10px;
+			border-radius: 50px;
+			background-color: white;
+			border: 1px solid white;
+		}
+
+		.rond3 {
+			width: 10px;
+			height: 10px;
+			border-radius: 50px;
+			border: 1px solid white;
+		}
+	}
+}
+
+.machin {
+	background-color: $color-machin;
+
+	h1 {
+		font: 45px $font-stack;
+		position: absolute;
+		left: 44.5%;
+	}
+
+	.ligne {
+		position: absolute;
+		bottom: 10%;
+		left: 44.4%;
+		width: 90px;
+		height: 1px;
+		background-color: #dadada;
+	}
+
+	.rondello {
+		width: 10px;
+		height: 10px;
+		border-radius: 50px;
+		border: 1px solid #dadada;
+		position: absolute;
+		left: 49.7%;
+		bottom: 9.5%;
+	}
+
+	.lignee {
+		width: 90px;
+		height: 1px;
+		background-color: #dadada;
+		position: absolute;
+		bottom: 10%;
+		left: 51%;
+	}
+
+	.box {
+		width: 600px;
+		height: 200px;
+		display: flex;
+		border: 1px solid #dadada;
+		background-color: white;
+		margin-top: 70px;
+		font: 15px $font-stack;
+		text-align: center;
+		img {
+			height: 100%;
+		}
+	}
+}
